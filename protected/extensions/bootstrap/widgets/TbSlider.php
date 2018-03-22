@@ -57,20 +57,20 @@ class TbSlider extends CInputWidget
 		else
 		{
 			list($name, $id) = $this->resolveNameID();
-	
+
 			if ($this->hasModel())
 			{
 				if ($this->form)
 					echo $this->form->textField($this->model, $this->attribute, $this->htmlOptions);
 				else
 					echo CHtml::activeTextField($this->model, $this->attribute, $this->htmlOptions);
-	
-			} 
+
+			}
 			else
 				echo CHtml::textField($name, $this->value, $this->htmlOptions);
-	
+
 			Yii::app()->bootstrap->registerSliderPlugin('#' . $id, $this->options, $this->onSlideStart, $this->onSlide, $this->onSlideStop);
-		}		
+		}
 	}
 
 	/**

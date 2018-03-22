@@ -13,7 +13,7 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Estación de evaluación y mejora - HSS',
-  
+
     'sourceLanguage'=>'en',
     'language'=>'es',
     'timezone'=>'America/Santiago',
@@ -27,16 +27,17 @@ return array(
 		'application.components.*',
         'ext.giix-components.*', // giix components
         'application.modules.user.models.*',
-        'application.modules.user.components.*',       
+        'application.modules.user.components.*',
         'application.modules.rights.*',
-        'application.modules.rights.components.*',        
+        'application.modules.rights.components.*',
+				'ext.select2.ESelect2',       
 	),
-    
+
     'theme'=>'bootstrap', // requires you to copy the theme under your themes directory
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		
+
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'cfconmutador',
@@ -45,13 +46,13 @@ return array(
             'generatorPaths' => array(
                 'ext.giix-core', // giix generators
                 'bootstrap.gii', // bootstrap generators
-            ),              
-		),  
-        
+            ),
+		),
+
         'user'=>array(
             'tableUsers' => 'user',
             'tableProfiles' => 'profile',
-            'tableProfileFields' => 'profile_field',        
+            'tableProfileFields' => 'profile_field',
             # encrypting method (php hash function)
             'hash' => 'md5',
             'sendActivationMail' => false,
@@ -72,12 +73,12 @@ return array(
                 'company'=>array(CActiveRecord::BELONGS_TO, 'Company', 'company_id'),
                 'occupation'=>array(CActiveRecord::BELONGS_TO, 'Occupation', 'occupation_id'),
                 'occupation_area'=>array(CActiveRecord::BELONGS_TO, 'OccupationArea', 'occupation_area_id'),
-            ),            
-        ),        
+            ),
+        ),
         'rights'=>array(
             //'install'=>true,
-        ),        
-        
+        ),
+
 	),
 
 	// application components
@@ -112,7 +113,7 @@ return array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 		),*/
 		// uncomment the following to use a MySQL database
-		
+
         'db'=>array(
             'connectionString' => 'mysql:host='.$dbhost.';dbname='.$dbname,
             'emulatePrepare' => true,
@@ -121,7 +122,7 @@ return array(
             'charset' => 'utf8',
             //'enableProfiling'=>TRUE,
         ),
-		
+
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
@@ -144,7 +145,7 @@ return array(
                     'report'=>'summary',
                     // lists execution time of every marked code block
                     // report can also be set to callstack
-                ),	*/			
+                ),	*/
 			),
 		),
 
@@ -152,7 +153,7 @@ return array(
             'class'=>'bootstrap.components.Bootstrap',
             'responsiveCss'=>true,
         ),
-        
+
         'less'=>array(
             'class'=>'ext.less.components.LessCompiler',
             'paths'=>array(
@@ -168,7 +169,7 @@ return array(
             //'optionName'=>'optionValue',
         ),*/
 	),
-	
+
     /*'controllerMap'=>array(
         'min'=>array(
             'class'=>'ext.minScript.controllers.ExtMinScriptController',

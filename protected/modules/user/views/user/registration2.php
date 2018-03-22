@@ -199,23 +199,10 @@ $this->breadcrumbs=array(
 
             <div class="row">
             <?php
-      //        $this->widget('ext.select2.ESelect2',array(
-    	//        '$profile'=>$profile,
-        //      'attribute'=>'occupation_id',
-        //      'data'=>CHtml::listData(Occupation::model()->findAll(), 'id', 'name'),
-    	//  ));
-      //echo $form->labelEx($profile, 'occupation_id');
-      //echo $form->dropDownList($profile, 'occupation_id', CHtml::listData(Occupation::model()->findAll(), 'id', 'name'), array('prompt'=>'Seleccione una opción'));
-      //echo $form->error($profile, 'occupation_id');
-            $this->widget('ext.select2.ESelect2',array(
-              'model'=>$profile,
-              'attribute'=>'occupation_id',
-              'data'=>CHtml::listData(Occupation::model()->findAll(), 'id', 'name'),
-              'options' => [
-                'placeholder' => 'Seleccione Una Carrera',
-                ],
-            ));
-          ?>
+                echo $form->labelEx($profile, 'occupation_id');
+                echo $form->dropDownList($profile, 'occupation_id', CHtml::listData(Occupation::model()->findAll(), 'id', 'name'), array('prompt'=>'Seleccione una opción'));
+                echo $form->error($profile, 'occupation_id');
+            ?>
             </div>
 
             <div class="row">

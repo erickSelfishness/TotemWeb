@@ -179,6 +179,7 @@ $this->breadcrumbs=array(
                                     'value'=>30,
                                     'step'=>1,
                                     'formater'=>'js:ageFormatter',
+
                                 ),
                                 'htmlOptions'=>array('value'=>'30'),
                             )
@@ -190,8 +191,8 @@ $this->breadcrumbs=array(
             <div class="row">
             <?php
                 echo $form->labelEx($profile, 'marital_status');
-                echo '<div class="form-inline-narrow">';
-                echo $form->radioButtonList($profile, 'marital_status', array('1'=>'Soltero', '2'=>'Casado', '3'=>'Divorciado', '4'=>'Viudo'), array('separator'=>''));
+                echo '<div class="form-inline">';
+                echo $form->radioButtonList($profile, 'marital_status', array('1'=>'Soltero', '2'=>'Casado', '3'=>'Divorciado', '4'=>'Viudo'), array('separator'=>'|'));
                 echo '</div>';
                 echo $form->error($profile, 'marital_status');
             ?>
@@ -289,8 +290,8 @@ $this->breadcrumbs=array(
             <div class="row">
             <?php
                 echo $form->labelEx($profile, 'working_days_sleep_quality');
-                echo '<div class="form-inline-narrow">';
-                echo $form->radioButtonList($profile, 'working_days_sleep_quality', array('1'=>'Muy mala', '2'=>'Mala', '3'=>'Buena', '4'=>'Muy buena'), array('separator'=>''));
+                echo '<div class="form-inline">';
+                echo $form->radioButtonList($profile, 'working_days_sleep_quality', array('1'=>'Muy mala', '2'=>'Mala', '3'=>'Buena', '4'=>'Muy buena'), array('separator'=>'|'));
                 echo '</div>';
                 echo $form->error($profile, 'working_days_sleep_quality');
             ?>

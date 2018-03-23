@@ -24,7 +24,7 @@ class TbSlider extends CInputWidget
 	/**
 	 * @var string JS Callback for Slider picker
 	 */
-    public $formatter;
+  public $formatter;
 	public $onSlideStart;
 	public $onSlide;
 	public $onSlideStop;

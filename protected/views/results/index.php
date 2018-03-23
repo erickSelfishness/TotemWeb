@@ -116,12 +116,12 @@ $('.search-form form').submit(function(){
                 'htmlOptions'=>array('style'=>'text-align: right;'),
                 ),
         array(
-                'header'=>'Profesión',
+                'header'=>'Carrera',
                 'name'=>'occupation',
                 'htmlOptions'=>array('style'=>'text-align: right;'),
                 ),
         array(
-                'header'=>'Área laboral',
+                'header'=>'Año de Universidad',
                 'name'=>'occupation_area',
                 'htmlOptions'=>array('style'=>'text-align: right;'),
                 ),
@@ -138,12 +138,12 @@ $('.search-form form').submit(function(){
                 'htmlOptions'=>array('style'=>'text-align: right;'),
                 ),
         array(
-                'header'=>'Hs. sueño deseadas días laborales',
+                'header'=>'Hs. sueño deseadas días Universidad',
                 'name'=>'working_days_sleep_hours_desired',
                 'htmlOptions'=>array('style'=>'text-align: right;'),
                 ),
         array(
-                'header'=>'Calidad sueño días laborales',
+                'header'=>'Calidad sueño días Universidad',
                 'name'=>'working_days_sleep_quality',
                 'htmlOptions'=>array('style'=>'text-align: right;'),
                 ),
@@ -163,7 +163,7 @@ $('.search-form form').submit(function(){
                 'htmlOptions'=>array('style'=>'text-align: right;'),
                 ),
         array(
-                'header'=>'Hs. laborales',
+                'header'=>'Hs. De Universidad',
                 'name'=>'working_hours',
                 'htmlOptions'=>array('style'=>'text-align: right;'),
                 ),

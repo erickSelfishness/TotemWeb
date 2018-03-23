@@ -410,7 +410,7 @@ class Bootstrap extends CApplicationComponent
 
 
 	}
-    
+
 	/**
 	 * Registers the Bootstrap slider plugin
 	 * @param string $selector the CSS selector
@@ -423,10 +423,10 @@ class Bootstrap extends CApplicationComponent
 	{
 
 		$key = __CLASS__ . '.' . md5(self::PLUGIN_SLIDER . $selector . serialize($options) . $onSlideStart . $onSlide . $onSlideStop);
-        
+
 		Yii::app()->clientScript->registerScript($key, '$("' . $selector . '").slider(' . CJavaScript::encode($options) . ').on("slideStart", '.CJavaScript::encode($onSlideStart).').on("slide", '.CJavaScript::encode($onSlide).').on("slideStop", '.CJavaScript::encode($onSlideStop).');');
 
-	}    
+	}
 
 	/**
 	 * Registers the Bootstrap spin edit plugin
@@ -439,11 +439,11 @@ class Bootstrap extends CApplicationComponent
 	{
 
 		$key = __CLASS__ . '.' . md5(self::PLUGIN_SLIDER . $selector . serialize($options));
-        
+
 		Yii::app()->clientScript->registerScript($key, '$("' . $selector . '").spinedit(' . CJavaScript::encode($options) . ');');
 
-	}  
-    
+	}
+
 	/**
 	 * Registers a Bootstrap JavaScript plugin.
 	 * @param string $name the name of the plugin

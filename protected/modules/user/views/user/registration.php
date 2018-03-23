@@ -205,7 +205,7 @@ $this->breadcrumbs=array(
         //      'attribute'=>'occupation_id',
         //      'data'=>CHtml::listData(Occupation::model()->findAll(), 'id', 'name'),
     	//  ));
-      //echo $form->labelEx($profile, 'occupation_id');
+      echo $form->labelEx($profile, 'occupation_id');
       //echo $form->dropDownList($profile, 'occupation_id', CHtml::listData(Occupation::model()->findAll(), 'id', 'name'), array('prompt'=>'Seleccione una opción'));
       //echo $form->error($profile, 'occupation_id');
             $this->widget('ext.select2.ESelect2',array(
@@ -213,7 +213,8 @@ $this->breadcrumbs=array(
               'attribute'=>'occupation_id',
               'data'=>CHtml::listData(Occupation::model()->findAll(), 'id', 'name'),
               'options' => [
-                'placeholder' => 'Seleccione Una Carrera',
+                'placeholder' => 'Busque su Carrera Correspondiente',
+
                 ],
             ));
           ?>
@@ -286,6 +287,30 @@ $this->breadcrumbs=array(
                 echo $form->error($profile, 'working_days_sleep_hours_desired');
             ?>
             </div>
+
+            <div class="row form-inline-wide">
+            <?php
+                echo $form->labelEx($profile, 'working_hours');
+                echo '&nbsp;&nbsp;&nbsp;';
+                $this->widget('bootstrap.widgets.TbTimePicker',
+                        array(
+                                'model'=>$profile,
+                                'attribute'=>'working_hours',
+                                'options' => array(
+                                    'defaultTime' => '0:00',
+                                    'noAppend' => true, // mandatory
+                                    'disableFocus' => true, // mandatory
+                                    'showMeridian' => false // irrelevant
+                                ),
+                                'htmlOptions'=>array('style'=>'width: 40px;'),
+                            )
+                        );
+                echo $form->error($profile, 'working_hours');
+            ?>
+            </div>
+
+
+
 
             <div class="row">
             <?php

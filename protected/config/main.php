@@ -30,7 +30,7 @@ return array(
         'application.modules.user.components.*',
         'application.modules.rights.*',
         'application.modules.rights.components.*',
-				'ext.select2.ESelect2',       
+				'ext.select2.ESelect2',
 	),
 
     'theme'=>'bootstrap', // requires you to copy the theme under your themes directory
@@ -42,7 +42,7 @@ return array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'cfconmutador',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1','hss.selfishness.cl','54.152.244.57'),
+			'ipFilters'=>array('127.0.0.1','::1'),
             'generatorPaths' => array(
                 'ext.giix-core', // giix generators
                 'bootstrap.gii', // bootstrap generators

@@ -10,7 +10,7 @@ Felipe Huerta Iturra - Ing. Desarrollador y Diseñador
 Erick Carvallo - infrastructura
 Para Más info: info@selfishness.cl
 
-Version Actualizada 21-03-2018
+Version Actualizada 24-03-2018
 
 
 Para cambiar a prd modificar archivos de configuracion en
@@ -38,17 +38,16 @@ $preload = array(
 
 ----------------PRODUCCION------------------
 
-<?php
-$dbhost = "aalrdwptf8t3mv.cavwsztvupxj.us-east-1.rds.amazonaws.com";
+
+$dbhost = "aazi5v3kn45zad.cavwsztvupxj.us-east-1.rds.amazonaws.com";
 $dbname = "estacion_sueno2";
 $dbuser = "root";
-$dbpass = "Selftech_123*";
+$dbpass = "Selftech_123*cato";
 
 $preload = array(
     'log',
     'bootstrap',
-//    'less', // REMOVE IN PRODUCTION
+    'less', // REMOVE IN PRODUCTION
 );
-
 
 Modificado por Felipe Huerta Iturra y Erick Carvallo

@@ -45,7 +45,7 @@ $('.search-form form').submit(function(){
        )); ?>
 
     <?php
-    if($_SERVER['SERVER_NAME'] == 'totem-env.us-east-1.elasticbeanstalk.com'){
+    if($_SERVER['SERVER_NAME'] == 'cato-totem.us-east-1.elasticbeanstalk.com'){
         $this->widget('bootstrap.widgets.TbButton', array(
             //'type'=>'link',
             'label'=>'Borrar resultados',

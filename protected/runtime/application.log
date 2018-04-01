@@ -45,3 +45,21 @@ in /opt/bitnami/apache2/htdocs/totem/index.php (14)
 2018/03/31 22:07:45 [warning] [application] Error al establecer unsafe al atributo "verifyCode" de "RegistrationForm".
 in /opt/bitnami/apache2/htdocs/totem/protected/modules/user/controllers/RegistrationController.php (32)
 in /opt/bitnami/apache2/htdocs/totem/index.php (14)
+2018/04/01 02:35:01 [warning] [application] Error al establecer unsafe al atributo "verifyCode" de "RegistrationForm".
+in /opt/bitnami/apache2/htdocs/totem/protected/modules/user/controllers/RegistrationController.php (32)
+in /opt/bitnami/apache2/htdocs/totem/index.php (14)
+2018/04/01 02:35:16 [warning] [application] Error al establecer unsafe al atributo "verifyCode" de "RegistrationForm".
+in /opt/bitnami/apache2/htdocs/totem/protected/modules/user/controllers/RegistrationController.php (32)
+in /opt/bitnami/apache2/htdocs/totem/index.php (14)
+2018/04/01 02:36:04 [warning] [application] Error al establecer unsafe al atributo "verifyCode" de "RegistrationForm".
+in /opt/bitnami/apache2/htdocs/totem/protected/modules/user/controllers/RegistrationController.php (32)
+in /opt/bitnami/apache2/htdocs/totem/index.php (14)
+2018/04/01 03:04:31 [warning] [application] Error al establecer unsafe al atributo "verifyCode" de "RegistrationForm".
+in /opt/bitnami/apache2/htdocs/totem/protected/modules/user/controllers/RegistrationController.php (32)
+in /opt/bitnami/apache2/htdocs/totem/index.php (14)
+2018/04/01 03:04:51 [warning] [application] Error al establecer unsafe al atributo "verifyCode" de "RegistrationForm".
+in /opt/bitnami/apache2/htdocs/totem/protected/modules/user/controllers/RegistrationController.php (32)
+in /opt/bitnami/apache2/htdocs/totem/index.php (14)
+2018/04/01 03:04:56 [warning] [application] Error al establecer unsafe al atributo "verifyCode" de "RegistrationForm".
+in /opt/bitnami/apache2/htdocs/totem/protected/modules/user/controllers/RegistrationController.php (32)
+in /opt/bitnami/apache2/htdocs/totem/index.php (14)

@@ -1045,5 +1045,6 @@ p.info {
   margin-left: 20px;
 }
 .nav a {
-  width: 140px;
+  /*width: 140px;*/
+  width:80px;
 }

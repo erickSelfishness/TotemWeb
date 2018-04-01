@@ -3,7 +3,7 @@
 $dbhost = "localhost";
 $dbname = "estacion_sueno3";
 $dbuser = "root";
-$dbpass = "";
+$dbpass = "PQ2vHP1T3xua";
 
 $preload = array(
     'log',

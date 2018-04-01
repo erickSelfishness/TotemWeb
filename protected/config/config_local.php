@@ -1,9 +1,9 @@
 <?php
 
-$dbhost = "localhost";
-$dbname = "estacion_sueno3";
+$dbhost = "aazi5v3kn45zad.cavwsztvupxj.us-east-1.rds.amazonaws.com";
+$dbname = "estacion_sueno2";
 $dbuser = "root";
-$dbpass = "";
+$dbpass = "Selftech_123*cato";
 
 $preload = array(
     'log',

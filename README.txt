@@ -1,10 +1,4 @@
-﻿Sistema para estación del sueño.
-
-Desarrollado por:
-Fernando Wentland (fwentland@devonix.net)
-
-Para más info: http://www.devonix.net
-
+﻿
 Modificado por:
 Felipe Huerta Iturra - Ing. Desarrollador y Diseñador
 Erick Carvallo - infrastructura
@@ -39,10 +33,10 @@ $preload = array(
 ----------------PRODUCCION------------------
 
 
-$dbhost = "aazi5v3kn45zad.cavwsztvupxj.us-east-1.rds.amazonaws.com";
+$dbhost = "";
 $dbname = "estacion_sueno2";
 $dbuser = "root";
-$dbpass = "Selftech_123*cato";
+$dbpass = "";
 
 $preload = array(
     'log',
